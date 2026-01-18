@@ -1,5 +1,7 @@
 import LOGO from "../assets/logo.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaStore, FaUser, FaShoppingCart } from "react-icons/fa";
 import SearchBar from "./SearchBar";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -15,29 +17,42 @@ export default function Navbar() {
         <div className="hidden md:block lg:block">
            <SearchBar />
         </div>
-        <div className="hidden md:flex space-x-4">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/shop">Shop</a>
-          <a href="/contact">Contact</a>
+        <div className="hidden md:flex space-x-8 md:mr-10">
+          <Link to="" className="flex gap-2">
+            <FaStore className="text-2xl text-gray-700" />
+            Shops
+          </Link>
+          <Link to="" className="flex gap-2">
+            <FaStore className="text-2xl text-gray-700" />
+             MyShop
+          </Link>
+          <Link to="" className="flex gap-2">
+            <FaUser className="text-2xl text-gray-700" />
+            Account
+          </Link>
+          <Link to="" className="flex gap-2">
+            <FaShoppingCart className="text-2xl text-gray-700"/>
+             Cart
+          </Link>
         </div>
         
-        <button className="md:hidden text-xl bg-gray-900 text-white p-1 rounded-lg" onClick={() => setOpen(!open)}>
-          {open ? "X" : "☰"}
-        </button>
-      </div>
-
-      {open && (
-        <div className="flex flex-col mt-2 space-y-2 md:hidden">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/shop">Shop</a>
-          <a href="/contact">Contact</a>
+        {/* Mobile Icons */}
+        <div className="md:hidden lg:hidden flex gap-5">
+          <Link to="" className="flex gap-2">
+            <FaStore className="text-xl text-gray-500" />
+            Shop
+          </Link>
+          <Link to="" className="flex gap-2">
+            <FaUser className="text-xl text-gray-500" />
+          </Link>
+          <Link to="" className="flex gap-2">
+            <FaShoppingCart className="text-xl text-gray-500"/>
+          </Link>
         </div>
-      )}
+      </div>
     </nav>
     <div className="lg:hidden md:hidden">
-      <SearchBar />
+      <SearchBar className="w-full"/>
     </div>
     </div>
   );
