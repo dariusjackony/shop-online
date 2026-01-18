@@ -1,4 +1,4 @@
-import LOGO from "../assets/logo.jpg";
+import LOGO from "../assets/logo.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaStore, FaUser, FaShoppingCart } from "react-icons/fa";
@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div>
-    <nav className="bg-white shadow-md p-4">
+    <nav className="bg-black shadow-md p-4 w-full">
       <div className="flex justify-between items-center">
         <div>
           <img src={LOGO} className="w-20" />
@@ -18,35 +18,36 @@ export default function Navbar() {
            <SearchBar />
         </div>
         <div className="hidden md:flex space-x-8 md:mr-10">
-          <Link to="" className="flex gap-2">
-            <FaStore className="text-2xl text-gray-700" />
+          <Link to="" className="flex gap-2 text-white">
+            <FaStore className="text-2xl text-gray-100" />
             Shops
           </Link>
-          <Link to="" className="flex gap-2">
-            <FaStore className="text-2xl text-gray-700" />
+          <Link to="" className="flex gap-2 text-white">
+            <FaStore className="text-2xl text-gray-100" />
              MyShop
           </Link>
-          <Link to="" className="flex gap-2">
-            <FaUser className="text-2xl text-gray-700" />
+          <Link to="" className="flex gap-2 text-white">
+            <FaUser className="text-2xl text-gray-100" />
             Account
           </Link>
-          <Link to="" className="flex gap-2">
-            <FaShoppingCart className="text-2xl text-gray-700"/>
-             Cart
+          <Link to="" className="flex gap-2 text-white">
+            <FaShoppingCart className="text-2xl text-gray-100"/>
+             0
           </Link>
         </div>
         
         {/* Mobile Icons */}
         <div className="md:hidden lg:hidden flex gap-5">
-          <Link to="" className="flex gap-2">
-            <FaStore className="text-xl text-gray-500" />
+          <Link to="" className="flex gap-2 text-white">
+            <FaStore className="text-xl text-gray-100" />
             Shop
           </Link>
           <Link to="" className="flex gap-2">
-            <FaUser className="text-xl text-gray-500" />
+            <FaUser className="text-xl text-gray-100" />
           </Link>
-          <Link to="" className="flex gap-2">
-            <FaShoppingCart className="text-xl text-gray-500"/>
+          <Link to="" className="flex gap-2 text-white">
+            <FaShoppingCart className="text-xl text-gray-100"/>
+            0
           </Link>
         </div>
       </div>
