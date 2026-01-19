@@ -1,4 +1,4 @@
-import LOGO from "../assets/logo.png";
+import LOGO from "../assets/bottomLogo.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaStore, FaUser, FaShoppingCart } from "react-icons/fa";
