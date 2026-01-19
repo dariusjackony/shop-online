@@ -1,8 +1,11 @@
 import Jamper from "../../assets/1.jpg";
+import Cap from "../../assets/2.jpg";
+import Jersey from "../../assets/4.webp";
+import Shoes from "../../assets/3.jpg";
 export const shops = [
   {
     id: "1",
-    name: "FASHION HUB",
+    name: "ZERO FASHIONS",
     label: Jamper,
     delivery: true,
     products: [
@@ -15,7 +18,7 @@ export const shops = [
   {
     id: "2",
     name: "FASHION HUB",
-    label: Jamper,
+    label: Cap,
     delivery: false,
     products: [
       { id: 1, name: "Red Jumper", category: "jumpers" },
@@ -26,8 +29,8 @@ export const shops = [
   },
   {
     id: "3",
-    name: "FASHION HUB",
-    label: Jamper,
+    name: "HAM JERSEYS",
+    label: Jersey,
     delivery: false,
     products: [
       { id: 1, name: "Red Jumper", category: "jumpers" },
@@ -38,8 +41,8 @@ export const shops = [
   },
   {
     id: "4",
-    name: "FASHION HUB",
-    label: Jamper,
+    name: "KATO SHOES",
+    label: Shoes,
     delivery: true,
     products: [
       { id: 1, name: "Red Jumper", category: "jumpers" },

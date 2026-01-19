@@ -13,7 +13,7 @@ export default function ShopsPage(){
                 <div key={shop.id} className="overflow-hidden rounded-lg bg-white w-full"
                  onClick={()=> navigate(`/shop/${shop.id}`)}
                 >
-                  <img src={shop.label} className="object-cover w-full" />
+                  <img src={shop.label} className="object-cover w-full h-40" />
                   <div className="p-3">
                       <h2 className="text-sm font-semibold">{shop.name}</h2>
                         <p className="text-sm overflow-hidden">
