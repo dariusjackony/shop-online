@@ -7,7 +7,7 @@ export default function ShopsPage(){
     const navigate = useNavigate();
     
     return(
-       <section className="px-2 mt-10">
+       <section className="px-2 mt-5">
            <div className="grid grid-cols-2 gap-2">
               {shops.map((shop)=>(
                 <div key={shop.id} className="overflow-hidden rounded-lg bg-white w-full"
@@ -20,7 +20,7 @@ export default function ShopsPage(){
                           {shop.products.slice(0,2).map((product) =>(product.name)).join(", ")}
                           {shop.products.length > 2 ? " and more.." : ""}
                         </p>
-                        <div className="flex gap-4 mt-2">
+                        <div className="flex gap-2 mt-2">
                             <p className="text-sm">
                                {shop.products.length} Items
                             </p>
