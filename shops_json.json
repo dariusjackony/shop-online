@@ -1,0 +1,90 @@
+[
+  {
+    "id": 2,
+    "profile": {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "username": "samuel",
+        "password": "pbkdf2_sha256$1000000$SGivl8IVvDwEEPplQy1rIZ$5IfMJ1eKMgzen5cukvO+WX84HonEdN/jM0wkMZ/eCvo="
+      },
+      "avatar": null,
+      "bio": "Am the maker",
+      "shop_count": 0,
+      "created_at": "2026-01-14T14:10:40.547499Z",
+      "updated_at": "2026-01-14T14:10:40.547552Z"
+    },
+    "shop_cover_image": null,
+    "shop_name": "Remies Shop",
+    "shop_description": "All of themmmm",
+    "do_delivery": false,
+    "created_at": "2026-01-15T11:27:23.405456Z",
+    "updated_at": "2026-01-15T13:30:42.488257Z"
+  },
+  {
+    "id": 3,
+    "profile": {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "username": "samuel",
+        "password": "pbkdf2_sha256$1000000$SGivl8IVvDwEEPplQy1rIZ$5IfMJ1eKMgzen5cukvO+WX84HonEdN/jM0wkMZ/eCvo="
+      },
+      "avatar": null,
+      "bio": "Am the maker",
+      "shop_count": 0,
+      "created_at": "2026-01-14T14:10:40.547499Z",
+      "updated_at": "2026-01-14T14:10:40.547552Z"
+    },
+    "shop_cover_image": null,
+    "shop_name": "Shoppy",
+    "shop_description": "djsskhkh",
+    "do_delivery": true,
+    "created_at": "2026-01-15T16:10:40.289182Z",
+    "updated_at": "2026-01-15T16:10:40.289268Z"
+  },
+  {
+    "id": 6,
+    "profile": {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "username": "samuel",
+        "password": "pbkdf2_sha256$1000000$SGivl8IVvDwEEPplQy1rIZ$5IfMJ1eKMgzen5cukvO+WX84HonEdN/jM0wkMZ/eCvo="
+      },
+      "avatar": null,
+      "bio": "Am the maker",
+      "shop_count": 0,
+      "created_at": "2026-01-14T14:10:40.547499Z",
+      "updated_at": "2026-01-14T14:10:40.547552Z"
+    },
+    "shop_cover_image": null,
+    "shop_name": "shoprite",
+    "shop_description": "ctyctyctctycyc",
+    "do_delivery": true,
+    "created_at": "2026-01-15T20:48:14.501387Z",
+    "updated_at": "2026-01-15T20:48:14.501518Z"
+  },
+  {
+    "id": 7,
+    "profile": {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "username": "samuel",
+        "password": "pbkdf2_sha256$1000000$SGivl8IVvDwEEPplQy1rIZ$5IfMJ1eKMgzen5cukvO+WX84HonEdN/jM0wkMZ/eCvo="
+      },
+      "avatar": null,
+      "bio": "Am the maker",
+      "shop_count": 0,
+      "created_at": "2026-01-14T14:10:40.547499Z",
+      "updated_at": "2026-01-14T14:10:40.547552Z"
+    },
+    "shop_cover_image": "/media/shop_cover_images/IMG-20251124-WA0000.jpg",
+    "shop_name": "Masavu shops",
+    "shop_description": "all kinds of thingss",
+    "do_delivery": true,
+    "created_at": "2026-01-20T07:02:15.493258Z",
+    "updated_at": "2026-01-20T07:02:15.493315Z"
+  }
+]
