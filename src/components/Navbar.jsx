@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className="bg-black shadow-md p-4 w-full">
       <div className="flex justify-between items-center">
         <div>
-          <img src={LOGO} className="w-20" />
+          <img src={LOGO} className="w-17" />
         </div>
         {/* search bar */}
         <div className="hidden md:block lg:block">

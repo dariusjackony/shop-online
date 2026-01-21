@@ -28,6 +28,22 @@ export const shops = [
       },
       {
         id: 3,
+        name: "Blue Jumper",
+        category: "jumpers",
+        image: Jersey,
+        description: "Soft cotton blue jumper, comfortable for everyday wear.",
+        price: 80_000
+      },
+      {
+        id: 4,
+        name: "Blue Jumper",
+        category: "jumpers",
+        image: Jersey,
+        description: "Soft cotton blue jumper, comfortable for everyday wear.",
+        price: 80_000
+      },
+      {
+        id: 5,
         name: "Black Cap",
         category: "caps",
         image: Cap,
