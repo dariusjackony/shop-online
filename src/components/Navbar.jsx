@@ -38,13 +38,7 @@ export default function Navbar() {
         
         {/* Mobile Icons */}
         <div className="md:hidden lg:hidden flex gap-5">
-          <Link to="" className="flex gap-2 text-white">
-            <FaStore className="text-xl text-gray-100" />
-            Shop
-          </Link>
-          <Link to="" className="flex gap-2">
-            <FaUser className="text-xl text-gray-100" />
-          </Link>
+          
           <Link to="" className="flex gap-2 text-white">
             <FaShoppingCart className="text-xl text-gray-100"/>
             0
