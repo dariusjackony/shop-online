@@ -1,9 +1,9 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { shops } from "./ShopData";
 export default function ShopPage(){
-     const { shopId } = useParams(); // get shop url
-     const navigate = useNavigate(); // easy movement without using Link
-     const shop = shops.find((s) => s.id === shopId); // get current shop
+     const { shopId } = useParams(); 
+     const navigate = useNavigate(); 
+     const shop = shops.find((s) => s.id === shopId); 
      const Categories = [ ...new Set(shop.products.map( p => p.category))]; // this will get unique values and remove duplicates
     return(
         <section className="px-2 mt-5">
@@ -22,7 +22,8 @@ export default function ShopPage(){
                   </div>
                   <div className="flex overflow-x-auto overflow-y-hidden gap-3 mt-5">
                     {products.map((product) => (
-                      <div key={product.id} className="overflow-hidden min-w-[200px] bg-white rounded-md">
+                      <div key={product.id} onClick={() => navigate(`/shop/${shop.id}/category/${category}/product/${product.id}`)}
+                        className="overflow-hidden min-w-[200px] bg-white rounded-md">
                         <img src={product.image} className="object-contain w-full h-30 " />
                         <div className="mt-1 p-2">
                             <p className="text-gray-700">
