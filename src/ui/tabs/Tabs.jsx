@@ -2,8 +2,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaStore, FaShoppingCart, FaUser } from "react-icons/fa";
 export default function Tabs(){
-    const [activeTab, setActiveTab] = useState("Home");
-    
     return(
         <section className="bg-black shadow-md p-4 w-full bottom-0 fixed lg:hidden md:hidden">
             <div className="flex justify-between px-4 text-white text-2xl">
