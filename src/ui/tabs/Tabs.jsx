@@ -12,7 +12,9 @@ export default function Tabs(){
                     <FaHome />
                 </NavLink>
                     
-                <NavLink>
+                <NavLink to="/shop"
+                 className={({isActive}) => ` ${isActive ? "text-blue-700" : "text-white"}`}
+                >
                     <FaStore />
                 </NavLink>
                 <NavLink>

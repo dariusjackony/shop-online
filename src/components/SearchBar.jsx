@@ -6,7 +6,7 @@ export default function SearchBar(){
             <input
               type="text"
               placeholder="Search for product..."
-              className="w-86   md:w-96 lg:w-[650px] p-2 pl-4 rounded-lg border border-gray-300 bg-gray-50
+              className="w-full   md:w-96 lg:w-[650px] p-2 pl-4 rounded-lg border border-gray-300 bg-gray-50
                         placeholder-gray-400 focus:outline-none"
             />
             

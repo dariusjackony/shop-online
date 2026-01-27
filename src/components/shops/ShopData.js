@@ -16,7 +16,7 @@ export const shops = [
         category: "jumpers",
         image: Jamper,
         description: "Warm and cozy red jumper, perfect for chilly evenings in Kampala.",
-        price: 95_000 // UGX
+        price: 95_000 
       },
       {
         id: 2,

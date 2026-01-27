@@ -5,7 +5,8 @@ export default function ShopPage(){
      const navigate = useNavigate(); 
      const shop = shops.find((s) => s.id === shopId); 
      const Categories = [ ...new Set(shop.products.map( p => p.category))]; // this will get unique values and remove duplicates
-    return(
+     return(
+
         <section className="px-2 mt-5">
           <h2 className="text-2xl font-bold">{shop.name}</h2>
           {Categories.map((category) => {
@@ -30,11 +31,9 @@ export default function ShopPage(){
                               {product.description}
                             </p>
                             <p>
-                              UGX {product.price}
+                              UGX {product.price.toLocaleString()}
                             </p>
-                            <button className="px-4 py-1.5 rounded-md cursor-pointer bg-blue-700 text-white mt-2">
-                              Add to cart
-                            </button>
+                        
                         </div>
                         
                       </div>

@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { shops } from "./ShopData";
 export default function CategoryPage(){
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const { shopId, category } = useParams();
     const shop = shops.find((s) => s.id === shopId);
     // get all products in this category
@@ -24,9 +24,7 @@ export default function CategoryPage(){
                             <p>
                               UGX {product.price}
                             </p>
-                            <button className="px-4 py-1.5 rounded-md cursor-pointer bg-blue-700 text-white mt-2">
-                              Add to cart
-                            </button>
+                            
                         </div>
                         
                       </div>
