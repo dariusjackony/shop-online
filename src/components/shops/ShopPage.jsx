@@ -21,16 +21,17 @@ export default function ShopPage(){
                         View More
                       </button>
                   </div>
-                  <div className="flex overflow-x-auto overflow-y-hidden gap-3 mt-5">
+                  <div className="flex overflow-x-auto hide-scrollbar overflow-y-hidden gap-3 -mb-8 mt-4 pb-16">
                     {products.map((product) => (
                       <div key={product.id} onClick={() => navigate(`/shop/${shop.id}/category/${category}/product/${product.id}`)}
                         className="overflow-hidden min-w-[200px] bg-white rounded-md">
                         <img src={product.image} className="object-contain w-full h-30 " />
                         <div className="mt-1 p-2">
+                            <p className="font-bold text-base w-full">{product.name}</p>
                             <p className="text-gray-700">
                               {product.description}
                             </p>
-                            <p>
+                            <p className="font-xl font-extrabold mt-1">
                               UGX {product.price.toLocaleString()}
                             </p>
                         

@@ -1,7 +1,8 @@
-
-import { useParams } from "react-router-dom";
+import { FaPhone } from "react-icons/fa";
+import { useNavigate, useParams } from "react-router-dom";
 import { shops } from "./ShopData";
 export default function ProductDetails(){
+    const navigate = useNavigate();
     const { shopId, productId } = useParams();
     const shop = shops.find((s) => String(s.id) === shopId);
     const product = shop?.products.find((p) => String(p.id) === productId);
@@ -16,10 +17,10 @@ export default function ProductDetails(){
                </div>
             </div>
              <div className="flex gap-2 mt-3">
-                <button className="bg-blue-700 px-4 py-2 rounded-lg text-white w-full">
-                    Contact shop
+                <button className="flex items-center gap-2 bg-blue-700 px-4 py-2 rounded-lg text-white w-full">
+                  Contact shop <FaPhone />
                 </button>
-                <button className=" bg-gray-200 w-full px-2 py-2 rounded-lg">
+                <button onClick={() => { navigate(`/shop/${shopId}`)}} className=" bg-gray-200 w-full px-2 py-2 rounded-lg">
                     More from shop
                 </button>
              </div>

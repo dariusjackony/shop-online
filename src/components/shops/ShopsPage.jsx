@@ -6,16 +6,13 @@ export default function ShopsPage(){
     const navigate = useNavigate();
     
     return(
-       <section className="px-2 mt-2 lg:px-40">
+       <section className="px-2 mt-2 lg:px-40 pb-16">
           <span className="text-2xl font-bold lg:text-3xl">Explore Shops</span>
            <div className="grid grid-cols-2 gap-2 mt-2 lg:grid-cols-4 lg:mt-4">
               {shops.map((shop)=>(
                 <div key={shop.id} className="overflow-hidden rounded-lg bg-white w-full"
                  onClick={()=> navigate(`/shop/${shop.id}`)}
                 >
-                  <div>
-                    
-                  </div>
                   <img src={shop.label} className="object-cover w-full h-40 lg:h-50 lg:object-contain" />
                   <div className="p-3">
                       <h2 className="text-sm font-semibold lg:text-base">{shop.name}</h2>

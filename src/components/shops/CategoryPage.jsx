@@ -10,7 +10,7 @@ export default function CategoryPage(){
         (p) => p.category === category
     );
     return(
-       <div className="px-2 mt-5 ">
+       <div className="px-2 mt-5 pb-16">
           <FaArrowLeft onClick={() => navigate(`/shop/${shop.id}`)} className="font-light text-xl" />
           <p className="text-xl font-semibold mt-4">{category}</p>
           <div className="grid grid-cols-2 gap-2 mt-5">
