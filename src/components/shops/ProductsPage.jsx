@@ -10,7 +10,7 @@ export default function ProductsPage(){
         shopDelivery: shop.delivery
     })))
     return(
-        <section className="px-2 mt-2">
+        <section className="px-2 mt-2 pb-16">
             <span className="text-2xl font-bold">Products for You</span>
          <div className="grid grid-cols-2 gap-1 mt-2">
             {allProducts.map(product => (

@@ -6,7 +6,7 @@ export default function ProductDetails(){
     const shop = shops.find((s) => String(s.id) === shopId);
     const product = shop?.products.find((p) => String(p.id) === productId);
     return(
-        <section className="mt-5 px-2">
+        <section className="mt-5 px-2 pb-16">
             <div className="overflow-hidden bg-white rounded-lg">
                <img src={product.image} className="object-cover w-full"/>
                <div className="p-2">
