@@ -5,6 +5,7 @@ import ShopsPage from "./components/shops/ShopsPage";
 import CategoryPage from "./components/shops/CategoryPage";
 import Product  from "./components/shops/Product";
 import ProductsPage from "./components/shops/ProductsPage";
+import ProductDetails from "./components/shops/ProductDetails";
 import Tabs from "./ui/tabs/Tabs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function App(){
@@ -18,6 +19,7 @@ export default function App(){
                <Route path="/shop/:shopId/category/:category" element={<CategoryPage />} />
                <Route path="/shop/:shopId/category/:category/product/:product" element={<Product />} />
                <Route path="/products" element={<ProductsPage />} />
+               <Route path="/product/:shopId/:productId" element={<ProductDetails />} />
                </Routes>
             <Tabs />
          </BrowserRouter>
