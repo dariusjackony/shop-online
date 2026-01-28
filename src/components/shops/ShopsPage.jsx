@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { shops } from "./ShopData";
 import { useState } from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
+import { FiShoppingBag } from "react-icons/fi";
 export default function ShopsPage(){
     const navigate = useNavigate();
     
@@ -24,8 +25,8 @@ export default function ShopsPage(){
                             <p className="text-sm flex">
                                <span className="hidden lg:block">Over</span> {shop.products.length} Items
                             </p>
-                            <p className="text-sm flex items-center gap-1 ">
-                              Delivery{shop.delivery ? <FaCheck className="text-blue-600 mt-0.5 " /> : <FaTimes className="text-red-600 mt-0.5" />}
+                            <p className="text-sm flex items-center gap-1">
+                              <FiShoppingBag /> Delivery{shop.delivery ? <FaCheck className="text-blue-600 mt-0.5 " /> : <FaTimes className="text-red-600 mt-0.5" />}
                             </p>
                         </div>
                   </div>
